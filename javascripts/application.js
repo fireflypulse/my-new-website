@@ -22,10 +22,10 @@ MyApp.Binder.prototype = {
 
   bindButtons: function(controller) {
     $('#about_link').on('click', function(){
-      alert('clicked ' + this)
+      controller.aboutMe();
     });
     $('#contact_link').on('click', function(){
-      alert('clicked ' + this)
+      controller.contact();
     });
 
   }
@@ -53,7 +53,11 @@ MyApp.Controller.prototype = {
   },
 
   aboutMe: function() {
+    alert('clicked ' + this);
+  },
 
+  contact: function() {
+    alert('clicked ' + this);
   }
 
 
