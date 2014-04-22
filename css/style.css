@@ -9,20 +9,35 @@ h1 {
   font-family: "Open Sans", 'sans-serif';
 }
 
-.about {
-  padding: 0;
-}
-
 p {
   display: inline-block;
   margin-left: 50px;
   font-family: "Open Sans", 'sans-serif';
 }
 
+#end_p {
+  padding-bottom: 100px;
+}
+
 .about {
   display: inline-block;
+  padding: 0;
   margin-left: 50px;
   font-family: "Open Sans", 'sans-serif';
+}
+
+h3 {
+  padding: 0px 0 0 50px;
+  margin: 0;
+}
+
+#about p {
+  margin: 0;
+  display: block;
+}
+
+#about li {
+  display: block;
 }
 
 #pic_of_me {
@@ -34,7 +49,7 @@ p {
 
 #pic_group {
   float: left;
-  max-width: 50%;
+  max-width: 48%;
   display: inline-block;
   margin: 20px 0 0 30px;
 
