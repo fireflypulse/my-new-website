@@ -31,6 +31,9 @@ MyApp.Binder.prototype = {
     $('#contact_link').on('click', function(){
       controller.contact();
     });
+    $('#projects_link').on('click', function(){
+      controller.projects();
+    })
 
   }
 
@@ -75,6 +78,13 @@ MyApp.Controller.prototype = {
 
   contact: function() {
     // alert('clicked ' + this);
+  },
+
+  projects: function() {
+    var divs = document.querySelectorAll('div')
+    var projects_div = document.querySelectorAll('#projects')
+    this.addClass(divs, "hidden")
+    this.removeClass(projects_div, "hidden")
   },
 
   addClass: function(elements, className) {
