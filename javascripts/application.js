@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   // fadeIn('#navigation')
   var myWebsite = new MyApp.Binder()
-  myWebsite.controller.fadeIn(navigation)
+  myWebsite.controller.fadeIn(navigation, 1500)
   myWebsite.bind();
 })
 
@@ -36,12 +36,12 @@ MyApp.Controller = function() {}
 
 MyApp.Controller.prototype = {
 
-  fadeIn: function(el) {
+  fadeIn: function(el, rate) {
     el.style.opacity = 0;
 
     var last = +new Date();
     var tick = function() {
-      el.style.opacity = +el.style.opacity + (new Date() - last) / 1500;
+      el.style.opacity = +el.style.opacity + (new Date() - last) / rate;
       last = +new Date();
 
       if (+el.style.opacity < 1) {
@@ -50,6 +50,11 @@ MyApp.Controller.prototype = {
     };
 
     tick();
+  },
+
+  aboutMe: function() {
+
   }
+
 
 };
