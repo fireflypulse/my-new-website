@@ -9,8 +9,8 @@ h1 {
   font-family: "Open Sans", 'sans-serif';
 }
 
-.about {
-  padding: 0;
+h2 {
+  text-align: center;
 }
 
 p {
@@ -19,24 +19,63 @@ p {
   font-family: "Open Sans", 'sans-serif';
 }
 
+#end_p {
+  padding-bottom: 100px;
+}
+
+#things {
+  float: right;
+  margin-right: 20%;
+  padding-bottom: 100px;
+}
+
 .about {
   display: inline-block;
-  margin-left: 50px;
+  padding: 0;
+  /*margin-left: 50px;*/
   font-family: "Open Sans", 'sans-serif';
 }
 
+/*.about ul {
+  margin: 0;
+}*/
+
+.about li {
+  margin: 0;
+}
+
+#about p {
+  margin: 0;
+  display: block;
+}
+
+#about li {
+  display: block;
+}
+
 #pic_of_me {
+
   float: left;
-  max-width: 20%;
+  max-width: 80%;
   display: inline-block;
   margin: 20px 0 0 30px;
+}
+
+#pic_of_time2ghost {
+  max-width: 35%;
+  text-align: center;
+  margin: 0 200px 5px 350px;
+}
+
+#pic_div {
+  width: 350px;
 }
 
 #pic_group {
   float: left;
-  max-width: 50%;
+  max-width: 48%;
   display: inline-block;
-  margin: 20px 0 0 30px;
+  margin: 20px 20px 0 30px;
 
 }
 
@@ -46,6 +85,30 @@ p {
 
 #welcome, #about, #projects {
   margin-top: 85px;
+}
+
+#welcome_heading {
+  margin-top: 25px;
+}
+
+#welcome {
+  float: right;
+  margin: 150px 100px 0 0;
+  /*position: relative;*/
+  border: 2px solid black;
+  width: 520px;
+  background-color: #5A6882;
+  border-radius: 25px;
+  /*margin-left: 250px;*/
+  /*margin-top: 130px;*/
+}
+
+.welcome {
+  display: inline-block;
+  margin-top: 85px;
+  padding-right: 0;
+
+
 }
 
 #navigation {
@@ -97,4 +160,9 @@ p {
 
 .hidden {
   display: none;
+}
+
+#footer {
+  display: block;
+  text-align: center;
 }

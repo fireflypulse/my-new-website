@@ -31,6 +31,9 @@ MyApp.Binder.prototype = {
     $('#contact_link').on('click', function(){
       controller.contact();
     });
+    $('#projects_link').on('click', function(){
+      controller.projects();
+    })
 
   }
 
@@ -58,9 +61,11 @@ MyApp.Controller.prototype = {
 
   michaelGleason: function() {
     var divs = document.querySelectorAll('div')
-    var welcome = document.querySelectorAll('#welcome')
+    var welcome_id = document.querySelectorAll('#welcome')
+    var welcome_class = document.querySelectorAll('.welcome')
     this.addClass(divs, "hidden")
-    this.removeClass(welcome, "hidden")
+    this.removeClass(welcome_id, "hidden")
+    this.removeClass(welcome_class, "hidden")
   },
 
   aboutMe: function() {
@@ -73,6 +78,13 @@ MyApp.Controller.prototype = {
 
   contact: function() {
     // alert('clicked ' + this);
+  },
+
+  projects: function() {
+    var divs = document.querySelectorAll('div')
+    var projects_div = document.querySelectorAll('#projects')
+    this.addClass(divs, "hidden")
+    this.removeClass(projects_div, "hidden")
   },
 
   addClass: function(elements, className) {
