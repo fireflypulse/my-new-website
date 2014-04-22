@@ -21,6 +21,10 @@ MyApp.Binder.prototype = {
   },
 
   bindButtons: function(controller) {
+
+    $('#my_name').on('click', function(){
+      controller.michaelGleason();
+    })
     $('#about_link').on('click', function(){
       controller.aboutMe();
     });
@@ -72,7 +76,7 @@ MyApp.Controller.prototype = {
   },
 
   addClass: function(elements, className) {
-    for(i in elements){
+    for(var i = 0; i < elements.length; i++){
       if (elements[i].classList)
         elements[i].classList.add(className);
       else
@@ -80,9 +84,8 @@ MyApp.Controller.prototype = {
     }
   },
 
-  // Might be unnecessary since I am going to fade in.
   removeClass: function(elements, className) {
-    for(i in elements){
+    for(var i = 0; i < elements.length; i++){
       if (elements[i].classList)
         elements[i].classList.remove(className);
       else
