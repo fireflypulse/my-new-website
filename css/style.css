@@ -3,7 +3,38 @@ body {
   background-repeat:repeat;
 }
 
-#content {
+h1 {
+  display: inline-block;
+  padding-left: 100px;
+  font-family: "Open Sans", 'sans-serif';
+}
+
+p {
+  display: block;
+  margin-left: 300px;
+  font-family: "Open Sans", 'sans-serif';
+}
+
+#pic_of_me {
+  float: left;
+  max-width: 20%;
+  display: inline-block;
+  margin: 20px 0 0 30px;
+}
+
+#pic_group {
+  float: left;
+  max-width: 50%;
+  display: inline-block;
+  margin: 20px 0 0 30px;
+
+}
+
+#about {
+  margin-top: 85px;
+}
+
+#welcome, #about, #projects {
   margin-top: 85px;
 }
 
@@ -29,6 +60,7 @@ body {
   float: left;
   font-size: 1.2em;
   font-weight: bold;
+  font-family: Audiowide;
   color: #fff;
   line-height: 80px;
   text-decoration: none;
@@ -51,4 +83,8 @@ body {
 #fixednav #my_name:hover, #fixednav li a:hover {
   color: #96aed8;
   background: rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
 }
