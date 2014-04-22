@@ -52,13 +52,42 @@ MyApp.Controller.prototype = {
     tick();
   },
 
+  michaelGleason: function() {
+    var divs = document.querySelectorAll('div')
+    var welcome = document.querySelectorAll('#welcome')
+    this.addClass(divs, "hidden")
+    this.removeClass(welcome, "hidden")
+  },
+
   aboutMe: function() {
-    alert('clicked ' + this);
+    // alert('clicked ' + this);
+    var divs = document.querySelectorAll('div')
+    var about_div = document.querySelectorAll('#about')
+    this.addClass(divs, "hidden")
+    this.removeClass(about_div, "hidden")
   },
 
   contact: function() {
-    alert('clicked ' + this);
-  }
+    // alert('clicked ' + this);
+  },
 
+  addClass: function(elements, className) {
+    for(i in elements){
+      if (elements[i].classList)
+        elements[i].classList.add(className);
+      else
+        elements[i].className += ' ' + className;
+    }
+  },
+
+  // Might be unnecessary since I am going to fade in.
+  removeClass: function(elements, className) {
+    for(i in elements){
+      if (elements[i].classList)
+        elements[i].classList.remove(className);
+      else
+        elements[i].className = elements[i].className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    }
+  }
 
 };
