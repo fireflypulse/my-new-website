@@ -9,6 +9,10 @@ h1 {
   font-family: "Open Sans", 'sans-serif';
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   display: inline-block;
   margin-left: 50px;
@@ -55,6 +59,12 @@ p {
   max-width: 80%;
   display: inline-block;
   margin: 20px 0 0 30px;
+}
+
+#pic_of_time2ghost {
+  max-width: 35%;
+  text-align: center;
+  margin: 0 200px 5px 350px;
 }
 
 #pic_div {
