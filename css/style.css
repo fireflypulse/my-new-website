@@ -62,9 +62,13 @@ p {
 }
 
 #pic_of_time2ghost {
-  max-width: 35%;
-  text-align: center;
-  margin: 0 200px 5px 350px;
+  max-width: 50%;
+
+  margin: 0 0 5px 100px;
+}
+
+.github {
+  margin: 5px, 150px, 25px, 150px;
 }
 
 #pic_div {
@@ -107,8 +111,12 @@ p {
   display: inline-block;
   margin-top: 85px;
   padding-right: 0;
+}
 
-
+#projects {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #navigation {
