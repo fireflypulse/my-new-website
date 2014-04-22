@@ -5,12 +5,31 @@ $(document).ready(function(){
   // fadeIn('#navigation')
   var myWebsite = new MyApp.Binder()
   myWebsite.controller.fadeIn(navigation)
+  myWebsite.bind();
 })
 
 var MyApp = function() {}
 
 MyApp.Binder = function() {
   this.controller = new MyApp.Controller();
+}
+
+MyApp.Binder.prototype = {
+
+  bind: function() {
+    this.bindButtons(this.controller);
+  },
+
+  bindButtons: function(controller) {
+    $('#about_link').on('click', function(){
+      alert('clicked ' + this)
+    });
+    $('#contact_link').on('click', function(){
+      alert('clicked ' + this)
+    });
+
+  }
+
 }
 
 MyApp.Controller = function() {}
