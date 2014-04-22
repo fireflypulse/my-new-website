@@ -1,3 +1,8 @@
+body {
+  background-image: url(../img/triangular.png);
+  background-repeat:repeat;
+}
+
 #content {
   margin-top: 85px;
 }
@@ -15,8 +20,8 @@
   list-style: none;
   display: block;
   width: 710px;
-  margin: 0 auto;
-  padding: 0px 25px;
+  margin: 0;
+  padding: 0;
 }
 
 #fixednav li a {
@@ -24,15 +29,26 @@
   float: left;
   font-size: 1.2em;
   font-weight: bold;
-  color: #96aed8;
+  color: #fff;
   line-height: 80px;
   text-decoration: none;
   padding: 0px 8px;
   margin-right: 6px;
-
 }
 
-#fixednav li a:hover {
+#fixednav #my_name {
+  display: block;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
   color: #fff;
+  line-height: 80px;
+  text-decoration: none;
+  padding: 0px 8px;
+  margin-right: 6px;
+}
+
+#fixednav #my_name:hover, #fixednav li a:hover {
+  color: #96aed8;
   background: rgba(0,0,0,0.3);
 }
