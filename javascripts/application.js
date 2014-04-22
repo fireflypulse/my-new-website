@@ -4,14 +4,21 @@ $(document).ready(function(){
 
   // fadeIn('#navigation')
 
+  var navbar = document.querySelectorAll('#navigation')[0];
+  fadeIn(navbar);
 })
+
+
+
+
+
 
 function fadeIn(el) {
   el.style.opacity = 0;
 
   var last = +new Date();
   var tick = function() {
-    el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+    el.style.opacity = +el.style.opacity + (new Date() - last) / 1500;
     last = +new Date();
 
     if (+el.style.opacity < 1) {
