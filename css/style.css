@@ -6,11 +6,13 @@ body {
 h1 {
   display: inline-block;
   padding-left: 100px;
+  font-family: "Open Sans", 'sans-serif';
 }
 
 p {
   display: block;
   margin-left: 300px;
+  font-family: "Open Sans", 'sans-serif';
 }
 
 #pic_of_me {
