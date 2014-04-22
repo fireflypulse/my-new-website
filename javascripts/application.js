@@ -58,9 +58,11 @@ MyApp.Controller.prototype = {
 
   michaelGleason: function() {
     var divs = document.querySelectorAll('div')
-    var welcome = document.querySelectorAll('#welcome')
+    var welcome_id = document.querySelectorAll('#welcome')
+    var welcome_class = document.querySelectorAll('.welcome')
     this.addClass(divs, "hidden")
-    this.removeClass(welcome, "hidden")
+    this.removeClass(welcome_id, "hidden")
+    this.removeClass(welcome_class, "hidden")
   },
 
   aboutMe: function() {
