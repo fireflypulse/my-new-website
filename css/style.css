@@ -3,6 +3,10 @@ body {
   background-repeat:repeat;
 }
 
+#pic_of_me {
+  max-width: 15%;
+}
+
 #content {
   margin-top: 85px;
 }
