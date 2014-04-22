@@ -15,12 +15,24 @@ p {
 
 #pic_of_me {
   float: left;
-  max-width: 15%;
+  max-width: 20%;
   display: inline-block;
   margin: 20px 0 0 30px;
 }
 
-#content {
+#pic_group {
+  float: left;
+  max-width: 50%;
+  display: inline-block;
+  margin: 20px 0 0 30px;
+
+}
+
+#about {
+  margin-top: 85px;
+}
+
+#welcome, #about, #projects {
   margin-top: 85px;
 }
 
@@ -69,4 +81,8 @@ p {
 #fixednav #my_name:hover, #fixednav li a:hover {
   color: #96aed8;
   background: rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
 }
